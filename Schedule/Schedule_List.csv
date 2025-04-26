@@ -1,5 +1,5 @@
 Game Scene;Priority;Feature ID;Feature Description;State;Feature Done Date;Feature Done Commit ID;;Bugfix Description;Bugfix Date;Bugfix Commit ID
-Main;P0;MA00;Build Background;;;;;;;
+Main;P0;MA00;Build Background;Done;2025/4/26;5d1c3d1d;;;;
 ;P0;MA01;Build UI;;;;;;;
 ;P0;MA02;Select NewPlayer;;;;;;;
 ;P0;MA03;Select LocalPlayer;;;;;;;
