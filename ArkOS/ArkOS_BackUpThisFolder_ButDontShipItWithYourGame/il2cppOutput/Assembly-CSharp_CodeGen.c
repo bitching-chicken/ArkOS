@@ -12,6 +12,46 @@
 
 
 
+extern void Player_Input_Actions_get_asset_mF6C63EE12CF3E528DA97068177C54A5D7EF17AF7 (void);
+extern void Player_Input_Actions__ctor_m7EBB05FB0AF8B1EBF9C256F8DC177AF2C52B1421 (void);
+extern void Player_Input_Actions_Finalize_m9F80F2A6D7B08E5CEBF88DC9734F06223F7A4860 (void);
+extern void Player_Input_Actions_Dispose_m52F01D669A5B9876BE283A0E5BF0F69287823ACB (void);
+extern void Player_Input_Actions_get_bindingMask_m2A396FB1ADC4BD5606BBB11007E7575456B2D2B5 (void);
+extern void Player_Input_Actions_set_bindingMask_m9F469F49B07AA9791D837A56D5ADD8D6C1FD721C (void);
+extern void Player_Input_Actions_get_devices_m5B0C7BBCCD101ED2DB45C6CB6A7C3768B65376A1 (void);
+extern void Player_Input_Actions_set_devices_mAE586782B9FE20DFDA516607495549E1A3077043 (void);
+extern void Player_Input_Actions_get_controlSchemes_m84C44B4C3571BD633464F112D146B905EA7F434D (void);
+extern void Player_Input_Actions_Contains_m1184DA24B9A112BC45B72EBA2097695877AE974D (void);
+extern void Player_Input_Actions_GetEnumerator_mD6C1FD5A02670D210EB8E7998F0BF8BC0DA182C2 (void);
+extern void Player_Input_Actions_System_Collections_IEnumerable_GetEnumerator_m92417C0398E06315E248929125C76D53274503AD (void);
+extern void Player_Input_Actions_Enable_mBF460BEAE74C053D8A1020B461BBF0231A8EA428 (void);
+extern void Player_Input_Actions_Disable_m3AB4B7FB4BE97E850BB028091A3C67ED67D3E85D (void);
+extern void Player_Input_Actions_get_bindings_m7A5ADC0F8664A54A4D13147449271EE55E396970 (void);
+extern void Player_Input_Actions_FindAction_m6436131EC42A4E1BEA9135FE872AFEBDE2FB6667 (void);
+extern void Player_Input_Actions_FindBinding_m616692AD4753EB4887EFAC93E4964D81FE0BCEE8 (void);
+extern void Player_Input_Actions_get_Main_UI_m2D82D22AAE7375B68478073277DEF0126993BCE6 (void);
+extern void Player_Input_Actions_get_KeyboardScheme_m049ADB26AABAE2476AD3F3DC243BEC146BEC416E (void);
+extern void Player_Input_Actions_get_GamepadScheme_m72D9073809696BF5D7B214A65293BF9722202780 (void);
+extern void Main_UIActions__ctor_m83A2B6E662CCC72FF7CFBEEA6748C44F22F4D747 (void);
+extern void Main_UIActions_get_First_Touch_m494464A34DC6C631666EE8D47E9DF4CA4D3B7022 (void);
+extern void Main_UIActions_get_Back_mD84A8519A2761DBF3D970594C6EB9082478E75B6 (void);
+extern void Main_UIActions_Get_m7460E0F507935C56472CBEF892CFF72561058D08 (void);
+extern void Main_UIActions_Enable_mAB422BECD19E2A9151B6403C818EB818E5B2D748 (void);
+extern void Main_UIActions_Disable_m36122BE54B010E073A14F9E75A5EF6D76887B4F2 (void);
+extern void Main_UIActions_get_enabled_mA5B977392798DE05041DBB72DF1D980EF7C80F4D (void);
+extern void Main_UIActions_op_Implicit_m1A076C59FC9B952385495F35E98667AD0D3234B7 (void);
+extern void Main_UIActions_AddCallbacks_m2B2D4E318E418D8B410EB25C4E275CB7431AB992 (void);
+extern void Main_UIActions_UnregisterCallbacks_mE9C994909637FE313D8E1BC9F5252071A09974E0 (void);
+extern void Main_UIActions_RemoveCallbacks_m6BBD61DCC8FAA355B4159E866F46B3BE4EB289E5 (void);
+extern void Main_UIActions_SetCallbacks_m2B8A0D4CF752999620C6C5B30FA03F4DE14FE5C4 (void);
+extern void Main_Input_Controller_Awake_m9C266EB8BF9487CC184C06A6DD7475A8730F3CD6 (void);
+extern void Main_Input_Controller_Input_First_Touch_m132FC94E3599AA4A60B97953768FBDBD4F60A1C1 (void);
+extern void Main_Input_Controller_Input_Back_m79C7EAF59EEB7E6136F5D44D7053C8B8A0F50F72 (void);
+extern void Main_Input_Controller_Invisible_Tip_Text_m26319CFB8DB89A54935CEDE51ADE5D35902BA956 (void);
+extern void Main_Input_Controller_Show_Select_Button_mFD7D3ADEBE03C4C512EAC84B0703E87EF11CF884 (void);
+extern void Main_Input_Controller_Show_Tip_Text_mB20259D466CE1DEEAD2DCA0D1CA00A26FB8B8925 (void);
+extern void Main_Input_Controller_Invisible_Select_Button_m82FC945E6761236A898E0E8326EE7C7765CBDB92 (void);
+extern void Main_Input_Controller__ctor_mA0F3A202C19C163F64168FD26E9C1BDF051888A0 (void);
 extern void Tip_Blink_Start_m3E6C4DEB07408588E019A8116991C170F0433369 (void);
 extern void Tip_Blink_Update_mC7A6AD06B7F55A6E0F62E06BEB35FF9948C87673 (void);
 extern void Tip_Blink__ctor_m8F161F0C5C5CDBDEF5AB70F5F3EF8C6654FB49B3 (void);
@@ -22,8 +62,50 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[10] = 
+static Il2CppMethodPointer s_methodPointers[52] = 
 {
+	Player_Input_Actions_get_asset_mF6C63EE12CF3E528DA97068177C54A5D7EF17AF7,
+	Player_Input_Actions__ctor_m7EBB05FB0AF8B1EBF9C256F8DC177AF2C52B1421,
+	Player_Input_Actions_Finalize_m9F80F2A6D7B08E5CEBF88DC9734F06223F7A4860,
+	Player_Input_Actions_Dispose_m52F01D669A5B9876BE283A0E5BF0F69287823ACB,
+	Player_Input_Actions_get_bindingMask_m2A396FB1ADC4BD5606BBB11007E7575456B2D2B5,
+	Player_Input_Actions_set_bindingMask_m9F469F49B07AA9791D837A56D5ADD8D6C1FD721C,
+	Player_Input_Actions_get_devices_m5B0C7BBCCD101ED2DB45C6CB6A7C3768B65376A1,
+	Player_Input_Actions_set_devices_mAE586782B9FE20DFDA516607495549E1A3077043,
+	Player_Input_Actions_get_controlSchemes_m84C44B4C3571BD633464F112D146B905EA7F434D,
+	Player_Input_Actions_Contains_m1184DA24B9A112BC45B72EBA2097695877AE974D,
+	Player_Input_Actions_GetEnumerator_mD6C1FD5A02670D210EB8E7998F0BF8BC0DA182C2,
+	Player_Input_Actions_System_Collections_IEnumerable_GetEnumerator_m92417C0398E06315E248929125C76D53274503AD,
+	Player_Input_Actions_Enable_mBF460BEAE74C053D8A1020B461BBF0231A8EA428,
+	Player_Input_Actions_Disable_m3AB4B7FB4BE97E850BB028091A3C67ED67D3E85D,
+	Player_Input_Actions_get_bindings_m7A5ADC0F8664A54A4D13147449271EE55E396970,
+	Player_Input_Actions_FindAction_m6436131EC42A4E1BEA9135FE872AFEBDE2FB6667,
+	Player_Input_Actions_FindBinding_m616692AD4753EB4887EFAC93E4964D81FE0BCEE8,
+	Player_Input_Actions_get_Main_UI_m2D82D22AAE7375B68478073277DEF0126993BCE6,
+	Player_Input_Actions_get_KeyboardScheme_m049ADB26AABAE2476AD3F3DC243BEC146BEC416E,
+	Player_Input_Actions_get_GamepadScheme_m72D9073809696BF5D7B214A65293BF9722202780,
+	Main_UIActions__ctor_m83A2B6E662CCC72FF7CFBEEA6748C44F22F4D747,
+	Main_UIActions_get_First_Touch_m494464A34DC6C631666EE8D47E9DF4CA4D3B7022,
+	Main_UIActions_get_Back_mD84A8519A2761DBF3D970594C6EB9082478E75B6,
+	Main_UIActions_Get_m7460E0F507935C56472CBEF892CFF72561058D08,
+	Main_UIActions_Enable_mAB422BECD19E2A9151B6403C818EB818E5B2D748,
+	Main_UIActions_Disable_m36122BE54B010E073A14F9E75A5EF6D76887B4F2,
+	Main_UIActions_get_enabled_mA5B977392798DE05041DBB72DF1D980EF7C80F4D,
+	Main_UIActions_op_Implicit_m1A076C59FC9B952385495F35E98667AD0D3234B7,
+	Main_UIActions_AddCallbacks_m2B2D4E318E418D8B410EB25C4E275CB7431AB992,
+	Main_UIActions_UnregisterCallbacks_mE9C994909637FE313D8E1BC9F5252071A09974E0,
+	Main_UIActions_RemoveCallbacks_m6BBD61DCC8FAA355B4159E866F46B3BE4EB289E5,
+	Main_UIActions_SetCallbacks_m2B8A0D4CF752999620C6C5B30FA03F4DE14FE5C4,
+	NULL,
+	NULL,
+	Main_Input_Controller_Awake_m9C266EB8BF9487CC184C06A6DD7475A8730F3CD6,
+	Main_Input_Controller_Input_First_Touch_m132FC94E3599AA4A60B97953768FBDBD4F60A1C1,
+	Main_Input_Controller_Input_Back_m79C7EAF59EEB7E6136F5D44D7053C8B8A0F50F72,
+	Main_Input_Controller_Invisible_Tip_Text_m26319CFB8DB89A54935CEDE51ADE5D35902BA956,
+	Main_Input_Controller_Show_Select_Button_mFD7D3ADEBE03C4C512EAC84B0703E87EF11CF884,
+	Main_Input_Controller_Show_Tip_Text_mB20259D466CE1DEEAD2DCA0D1CA00A26FB8B8925,
+	Main_Input_Controller_Invisible_Select_Button_m82FC945E6761236A898E0E8326EE7C7765CBDB92,
+	Main_Input_Controller__ctor_mA0F3A202C19C163F64168FD26E9C1BDF051888A0,
 	Tip_Blink_Start_m3E6C4DEB07408588E019A8116991C170F0433369,
 	Tip_Blink_Update_mC7A6AD06B7F55A6E0F62E06BEB35FF9948C87673,
 	Tip_Blink__ctor_m8F161F0C5C5CDBDEF5AB70F5F3EF8C6654FB49B3,
@@ -35,27 +117,94 @@ static Il2CppMethodPointer s_methodPointers[10] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[10] = 
+extern void Main_UIActions__ctor_m83A2B6E662CCC72FF7CFBEEA6748C44F22F4D747_AdjustorThunk (void);
+extern void Main_UIActions_get_First_Touch_m494464A34DC6C631666EE8D47E9DF4CA4D3B7022_AdjustorThunk (void);
+extern void Main_UIActions_get_Back_mD84A8519A2761DBF3D970594C6EB9082478E75B6_AdjustorThunk (void);
+extern void Main_UIActions_Get_m7460E0F507935C56472CBEF892CFF72561058D08_AdjustorThunk (void);
+extern void Main_UIActions_Enable_mAB422BECD19E2A9151B6403C818EB818E5B2D748_AdjustorThunk (void);
+extern void Main_UIActions_Disable_m36122BE54B010E073A14F9E75A5EF6D76887B4F2_AdjustorThunk (void);
+extern void Main_UIActions_get_enabled_mA5B977392798DE05041DBB72DF1D980EF7C80F4D_AdjustorThunk (void);
+extern void Main_UIActions_AddCallbacks_m2B2D4E318E418D8B410EB25C4E275CB7431AB992_AdjustorThunk (void);
+extern void Main_UIActions_UnregisterCallbacks_mE9C994909637FE313D8E1BC9F5252071A09974E0_AdjustorThunk (void);
+extern void Main_UIActions_RemoveCallbacks_m6BBD61DCC8FAA355B4159E866F46B3BE4EB289E5_AdjustorThunk (void);
+extern void Main_UIActions_SetCallbacks_m2B8A0D4CF752999620C6C5B30FA03F4DE14FE5C4_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[11] = 
 {
-	5260,
-	5260,
-	5260,
-	5260,
-	5260,
-	5260,
-	5260,
-	5260,
-	7511,
-	5260,
+	{ 0x06000015, Main_UIActions__ctor_m83A2B6E662CCC72FF7CFBEEA6748C44F22F4D747_AdjustorThunk },
+	{ 0x06000016, Main_UIActions_get_First_Touch_m494464A34DC6C631666EE8D47E9DF4CA4D3B7022_AdjustorThunk },
+	{ 0x06000017, Main_UIActions_get_Back_mD84A8519A2761DBF3D970594C6EB9082478E75B6_AdjustorThunk },
+	{ 0x06000018, Main_UIActions_Get_m7460E0F507935C56472CBEF892CFF72561058D08_AdjustorThunk },
+	{ 0x06000019, Main_UIActions_Enable_mAB422BECD19E2A9151B6403C818EB818E5B2D748_AdjustorThunk },
+	{ 0x0600001A, Main_UIActions_Disable_m36122BE54B010E073A14F9E75A5EF6D76887B4F2_AdjustorThunk },
+	{ 0x0600001B, Main_UIActions_get_enabled_mA5B977392798DE05041DBB72DF1D980EF7C80F4D_AdjustorThunk },
+	{ 0x0600001D, Main_UIActions_AddCallbacks_m2B2D4E318E418D8B410EB25C4E275CB7431AB992_AdjustorThunk },
+	{ 0x0600001E, Main_UIActions_UnregisterCallbacks_mE9C994909637FE313D8E1BC9F5252071A09974E0_AdjustorThunk },
+	{ 0x0600001F, Main_UIActions_RemoveCallbacks_m6BBD61DCC8FAA355B4159E866F46B3BE4EB289E5_AdjustorThunk },
+	{ 0x06000020, Main_UIActions_SetCallbacks_m2B8A0D4CF752999620C6C5B30FA03F4DE14FE5C4_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[52] = 
+{
+	6382,
+	6497,
+	6497,
+	6497,
+	6130,
+	4995,
+	6128,
+	4993,
+	6168,
+	3720,
+	6382,
+	6382,
+	6497,
+	6497,
+	6382,
+	2196,
+	1920,
+	6575,
+	6337,
+	6337,
+	5213,
+	6382,
+	6382,
+	6382,
+	6497,
+	6497,
+	6274,
+	9187,
+	5213,
+	5213,
+	5213,
+	5213,
+	0,
+	0,
+	6497,
+	5346,
+	5346,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	6497,
+	9563,
+	6497,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	10,
+	52,
 	s_methodPointers,
-	0,
-	NULL,
+	11,
+	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,

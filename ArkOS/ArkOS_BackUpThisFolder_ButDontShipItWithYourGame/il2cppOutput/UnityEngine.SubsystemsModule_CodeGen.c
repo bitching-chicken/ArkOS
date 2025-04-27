@@ -21,6 +21,7 @@ extern void SubsystemBindings_DestroySubsystem_m601801D653E84DE619656D06A61357F3
 extern void IntegratedSubsystemDescriptor_get_id_m89DBA940C79ED7EFE1137E3EC4A5A53BF7052F15 (void);
 extern void IntegratedSubsystemDescriptor_UnityEngine_ISubsystemDescriptor_Create_m8B6149525628F9DB15BB0651CEE0BE2FCAE1E875 (void);
 extern void IntegratedSubsystemDescriptor__ctor_mD10D471BEAB8890C14BF59828EE3C37BCC1538D6 (void);
+extern void SubsystemDescriptorBindings_Create_m5C7A196279BEF451109C3BFDC9A4015F4122A6AA (void);
 extern void SubsystemDescriptorBindings_GetId_mD3D36C3199EF50AAAB7830E6D061269F4CE956C1 (void);
 extern void Subsystem_Destroy_m0CE70A94D9CAD2E4B2528CFE5D9C874FD5BC4759 (void);
 extern void Subsystem__ctor_m43AA875446123D3DCF6016748B19934D0141447A (void);
@@ -37,6 +38,7 @@ extern void SubsystemManager_InitializeIntegratedSubsystem_mE3336CB0547C0B2CF195
 extern void SubsystemManager_ClearSubsystems_m36DD2EBBD868BD00A34CAAFD48BFA4E79D031443 (void);
 extern void SubsystemManager_StaticConstructScriptingClassMap_m350147EEDFABFFADB6541B807F1A94337F8E2337 (void);
 extern void SubsystemManager__cctor_m4B044EB8875B225C565E6FB10A2296C0E72BDE2F (void);
+extern void SubsystemManager_GetIntegratedSubsystemByPtr_mC117FBE03DF764DB78D48B11AD5AC324F223BDE7 (void);
 extern void SubsystemManager_RemoveIntegratedSubsystemByPtr_mBFD54C173F757CAF38E897250D05D517D08D4784 (void);
 extern void SubsystemManager_RemoveStandaloneSubsystem_m61CD473221C4A3210629379D92018723301E982A (void);
 extern void SubsystemManager_AddDeprecatedSubsystem_mC6604918A68F43B78A009B896E2CD8AF2251AE0C (void);
@@ -57,7 +59,7 @@ extern void SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A415
 extern void SubsystemWithProvider_set_running_mBEF44DA55F99B873A21E2003CDE06981E0348477 (void);
 extern void SubsystemWithProvider_get_providerBase_m8229B40F322D44A2E22B0AD62C581D284813410A (void);
 extern void SubsystemWithProvider__ctor_m7AAC2F13A01D674BF5040F42A08C88611FE60914 (void);
-static Il2CppMethodPointer s_methodPointers[68] = 
+static Il2CppMethodPointer s_methodPointers[74] = 
 {
 	NULL,
 	NULL,
@@ -69,11 +71,16 @@ static Il2CppMethodPointer s_methodPointers[68] =
 	IntegratedSubsystem_Stop_m4CFEE7A1C17893728205EAEEF9D5427622C794C4,
 	IntegratedSubsystem_Destroy_m3D6593DA2CB876877A48778C7D2F782EEC473A08,
 	IntegratedSubsystem__ctor_m8A0E82CAFC72287502DB0158488C98831B2DF405,
+	NULL,
 	SubsystemBindings_DestroySubsystem_m601801D653E84DE619656D06A61357F3C9BC7456,
 	IntegratedSubsystemDescriptor_get_id_m89DBA940C79ED7EFE1137E3EC4A5A53BF7052F15,
 	IntegratedSubsystemDescriptor_UnityEngine_ISubsystemDescriptor_Create_m8B6149525628F9DB15BB0651CEE0BE2FCAE1E875,
 	NULL,
 	IntegratedSubsystemDescriptor__ctor_mD10D471BEAB8890C14BF59828EE3C37BCC1538D6,
+	NULL,
+	NULL,
+	NULL,
+	SubsystemDescriptorBindings_Create_m5C7A196279BEF451109C3BFDC9A4015F4122A6AA,
 	SubsystemDescriptorBindings_GetId_mD3D36C3199EF50AAAB7830E6D061269F4CE956C1,
 	NULL,
 	NULL,
@@ -100,6 +107,7 @@ static Il2CppMethodPointer s_methodPointers[68] =
 	SubsystemManager_StaticConstructScriptingClassMap_m350147EEDFABFFADB6541B807F1A94337F8E2337,
 	SubsystemManager__cctor_m4B044EB8875B225C565E6FB10A2296C0E72BDE2F,
 	NULL,
+	SubsystemManager_GetIntegratedSubsystemByPtr_mC117FBE03DF764DB78D48B11AD5AC324F223BDE7,
 	SubsystemManager_RemoveIntegratedSubsystemByPtr_mBFD54C173F757CAF38E897250D05D517D08D4784,
 	SubsystemManager_RemoveStandaloneSubsystem_m61CD473221C4A3210629379D92018723301E982A,
 	SubsystemManager_AddDeprecatedSubsystem_mC6604918A68F43B78A009B896E2CD8AF2251AE0C,
@@ -128,85 +136,94 @@ static Il2CppMethodPointer s_methodPointers[68] =
 	SubsystemWithProvider_get_providerBase_m8229B40F322D44A2E22B0AD62C581D284813410A,
 	SubsystemWithProvider__ctor_m7AAC2F13A01D674BF5040F42A08C88611FE60914,
 };
-static const int32_t s_InvokerIndices[68] = 
+static const int32_t s_InvokerIndices[74] = 
 {
 	0,
 	0,
 	0,
 	0,
 	0,
-	4254,
-	5260,
-	5260,
-	5260,
-	5260,
-	7372,
-	5155,
-	5155,
+	5213,
+	6497,
+	6497,
+	6497,
+	6497,
 	0,
-	5260,
-	7216,
+	9353,
+	6382,
+	6382,
 	0,
-	0,
-	0,
-	5260,
-	0,
-	5260,
-	0,
-	5155,
-	4254,
-	5155,
-	4254,
-	5155,
-	0,
-	5260,
+	6497,
 	0,
 	0,
 	0,
-	7374,
-	7507,
-	7507,
-	6884,
-	7507,
-	7507,
-	7507,
-	0,
-	7372,
-	7050,
-	7374,
-	7050,
-	7218,
-	6884,
-	7507,
-	7374,
+	9096,
+	9163,
 	0,
 	0,
 	0,
-	7374,
-	7507,
-	5155,
+	6497,
 	0,
-	5155,
-	5260,
-	5260,
+	6497,
 	0,
-	5260,
+	6382,
+	5213,
+	6382,
+	5213,
+	6382,
 	0,
-	5260,
+	6497,
 	0,
-	5069,
-	4165,
-	5155,
-	5260,
+	0,
+	0,
+	9355,
+	9554,
+	9554,
+	8737,
+	9554,
+	9554,
+	9554,
+	0,
+	9163,
+	9353,
+	8967,
+	9355,
+	8967,
+	9166,
+	8737,
+	9554,
+	9355,
+	0,
+	0,
+	0,
+	9355,
+	9554,
+	6382,
+	0,
+	6382,
+	6497,
+	6497,
+	0,
+	6497,
+	0,
+	6497,
+	0,
+	6274,
+	5103,
+	6382,
+	6497,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[5] = 
+static const Il2CppTokenRangePair s_rgctxIndices[6] = 
 {
-	{ 0x0200000B, { 0, 2 } },
-	{ 0x06000029, { 2, 2 } },
-	{ 0x06000032, { 4, 5 } },
-	{ 0x06000033, { 9, 11 } },
-	{ 0x06000034, { 20, 9 } },
+	{ 0x02000008, { 0, 2 } },
+	{ 0x0200000D, { 2, 2 } },
+	{ 0x0600002E, { 4, 2 } },
+	{ 0x06000038, { 6, 5 } },
+	{ 0x06000039, { 11, 11 } },
+	{ 0x0600003A, { 22, 9 } },
 };
+extern const uint32_t g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8;
+extern const uint32_t g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B;
 extern const uint32_t g_rgctx_SubsystemDescriptor_1_Create_mDD43AAF753325CF1666EC772B90E7CA2E02A7918;
 extern const uint32_t g_rgctx_TSubsystem_tCD8EA1955E1BB69D300C24C9B632BA316E2ECA39;
 extern const uint32_t g_rgctx_List_1_t756D87A29C46D7F54BCF78323C3BE01F1DF1D882;
@@ -236,8 +253,10 @@ extern const Il2CppRGCTXConstrainedData g_rgctx_TDescriptor_tD5C1BF59BFFF7F69AC9
 extern const uint32_t g_rgctx_List_1_set_Item_m58B49CD878D3DC099EB422A63AB014DF5B1CAE06;
 extern const uint32_t g_rgctx_List_1_get_Count_mC3BAEE88ADF85DEC0CA10B97B3E7F42183A8AFBB;
 extern const uint32_t g_rgctx_List_1_Add_m99E6BCF557EB89898061B9B8761AA6D402DD2592;
-static const Il2CppRGCTXDefinition s_rgctxValues[29] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[31] = 
 {
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SubsystemDescriptor_1_Create_mDD43AAF753325CF1666EC772B90E7CA2E02A7918 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystem_tCD8EA1955E1BB69D300C24C9B632BA316E2ECA39 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t756D87A29C46D7F54BCF78323C3BE01F1DF1D882 },
@@ -272,16 +291,16 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGenModule = 
 {
 	"UnityEngine.SubsystemsModule.dll",
-	68,
+	74,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	5,
+	6,
 	s_rgctxIndices,
-	29,
+	31,
 	s_rgctxValues,
 	NULL,
 	NULL,
