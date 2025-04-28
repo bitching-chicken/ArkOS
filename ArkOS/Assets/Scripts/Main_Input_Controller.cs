@@ -6,9 +6,12 @@ using TMPro;
 
 public class Main_Input_Controller : MonoBehaviour
 {
-    [Header("UI Objects")]
+    [Header("Start_Tip_Text Objects")]
     public TextMeshProUGUI Start_Tip_Text;
+    public CanvasGroup Start_Tip_CanvasGroup;
+    [Header("Direct_Get_Button Objects")]
     public GameObject Direct_Get_Button;
+    public CanvasGroup Direct_Get_CanvasGroup;
 
     // Input System
     private PlayerInput playerInput;
@@ -16,6 +19,9 @@ public class Main_Input_Controller : MonoBehaviour
 
     // FSM
     private string Main_UI_FSM = "IDLE";
+
+    // Parameter
+    private float fadeDuration = 0.8f;
 
     private void Awake()
     {
@@ -36,8 +42,9 @@ public class Main_Input_Controller : MonoBehaviour
         if (context.performed && Main_UI_FSM == "IDLE")
         {
             Main_UI_FSM = "SELECT";
-            Invisible_Tip_Text();
-            Show_Select_Button();
+            StartCoroutine(FadeOut_FadeIn_Seq(Start_Tip_Text.gameObject, Start_Tip_CanvasGroup, Direct_Get_Button, Direct_Get_CanvasGroup));
+            //StartCoroutine(FadeOut_Object(Start_Tip_Text.gameObject, Start_Tip_CanvasGroup));
+            //StartCoroutine(FadeIn_Object(Direct_Get_Button, Direct_Get_CanvasGroup));
             //Debug.Log("First_Touch!" + context.phase);
             //Main_Input.Main_UI.Disable();
         }
@@ -48,35 +55,44 @@ public class Main_Input_Controller : MonoBehaviour
         if (context.performed && Main_UI_FSM == "SELECT")
         {
             Main_UI_FSM = "IDLE";
-            Show_Tip_Text();
-            Invisible_Select_Button();
+            StartCoroutine(FadeOut_FadeIn_Seq(Direct_Get_Button, Direct_Get_CanvasGroup, Start_Tip_Text.gameObject, Start_Tip_CanvasGroup));
+            //StartCoroutine(FadeIn_Object(Start_Tip_Text.gameObject, Start_Tip_CanvasGroup));
+            //StartCoroutine(FadeOut_Object(Direct_Get_Button, Direct_Get_CanvasGroup));
         }
     }
 
     // Processing Function
-    void Invisible_Tip_Text()
+    IEnumerator FadeOut_Object(GameObject Object, CanvasGroup Canvas)
     {
-        Start_Tip_Text.gameObject.SetActive(false);
-        //Start_Tip_Text.DOFade(0, 0.8f)
-        //.OnComplete(() => touchPromptText.gameObject.SetActive(false));
+        Canvas.alpha = 1;
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            Canvas.alpha = Mathf.Lerp(1, 0, elapsed / fadeDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        Canvas.alpha = 0;
+        Object.SetActive(false);
     }
 
-    void Show_Select_Button()
+    IEnumerator FadeIn_Object(GameObject Object, CanvasGroup Canvas)
     {
-        Direct_Get_Button.SetActive(true);
-
-        // 按钮动画（可选）
-        //LeanTween.scale(newGameButton, Vector3.one * 1.1f, 0.3f).setEasePunch();
-        //LeanTween.scale(continueButton, Vector3.one * 1.1f, 0.3f).setDelay(0.1f).setEasePunch();
+        Canvas.alpha = 0;
+        Object.SetActive(true);
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            Canvas.alpha = Mathf.Lerp(0, 1, elapsed / fadeDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        Canvas.alpha = 1;
     }
 
-    void Show_Tip_Text()
+    IEnumerator FadeOut_FadeIn_Seq(GameObject Object0, CanvasGroup Canvas0, GameObject Object1, CanvasGroup Canvas1)
     {
-        Start_Tip_Text.gameObject.SetActive(true);
-    }
-
-    void Invisible_Select_Button()
-    {
-        Direct_Get_Button.SetActive(false);
+        yield return StartCoroutine(FadeOut_Object(Object0, Canvas0));
+        yield return StartCoroutine(FadeIn_Object(Object1, Canvas1));
     }
 }
