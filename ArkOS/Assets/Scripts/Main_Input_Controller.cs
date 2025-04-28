@@ -9,6 +9,9 @@ public class Main_Input_Controller : MonoBehaviour
     [Header("Start_Tip_Text Objects")]
     public TextMeshProUGUI Start_Tip_Text;
     public CanvasGroup Start_Tip_CanvasGroup;
+    [Header("Battle_Get_Button Objects")]
+    public GameObject Battle_Get_Button;
+    public CanvasGroup Battle_Get_CanvasGroup;
     [Header("Direct_Get_Button Objects")]
     public GameObject Direct_Get_Button;
     public CanvasGroup Direct_Get_CanvasGroup;
@@ -18,7 +21,7 @@ public class Main_Input_Controller : MonoBehaviour
     private Player_Input_Actions Main_Input;
 
     // FSM
-    private string Main_UI_FSM = "IDLE";
+    public static string Main_UI_FSM = "IDLE";
 
     // Parameter
     private float fadeDuration = 0.8f;
@@ -51,17 +54,17 @@ public class Main_Input_Controller : MonoBehaviour
             List<List<GameObject>> Object_Lists = new List<List<GameObject>>()
             {
                 new List<GameObject> { Start_Tip_Text.gameObject },
-                new List<GameObject> { Direct_Get_Button }
+                new List<GameObject> { Battle_Get_Button, Direct_Get_Button }
             };
             List<List<CanvasGroup>> Canvas_Lists = new List<List<CanvasGroup>>()
             {
                 new List<CanvasGroup> { Start_Tip_CanvasGroup },
-                new List<CanvasGroup> { Direct_Get_CanvasGroup }
+                new List<CanvasGroup> { Battle_Get_CanvasGroup, Direct_Get_CanvasGroup }
             };
             List<List<bool>> IsFadeIn_Lists = new List<List<bool>>()
             {
                 new List<bool> { false },
-                new List<bool> { true }
+                new List<bool> { true, true }
             };
             StartCoroutine(Fade_List(Object_Lists, Canvas_Lists, IsFadeIn_Lists));
             //Debug.Log("First_Touch!" + context.phase);
@@ -82,17 +85,17 @@ public class Main_Input_Controller : MonoBehaviour
             // typeC
             List<List<GameObject>> Object_Lists = new List<List<GameObject>>()
             {
-                new List<GameObject> { Direct_Get_Button },
+                new List<GameObject> { Battle_Get_Button, Direct_Get_Button },
                 new List<GameObject> { Start_Tip_Text.gameObject }
             };
             List<List<CanvasGroup>> Canvas_Lists = new List<List<CanvasGroup>>()
             {
-                new List<CanvasGroup> { Direct_Get_CanvasGroup },
+                new List<CanvasGroup> { Battle_Get_CanvasGroup, Direct_Get_CanvasGroup },
                 new List<CanvasGroup> { Start_Tip_CanvasGroup }
             };
             List<List<bool>> IsFadeIn_Lists = new List<List<bool>>()
             {
-                new List<bool> { false },
+                new List<bool> { false, false },
                 new List<bool> { true }
             };
             StartCoroutine(Fade_List(Object_Lists, Canvas_Lists, IsFadeIn_Lists));
