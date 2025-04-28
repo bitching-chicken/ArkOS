@@ -152,7 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Start_Tip_Text: {fileID: 1064691093}
+  Start_Tip_CanvasGroup: {fileID: 1064691096}
   Direct_Get_Button: {fileID: 666241788}
+  Direct_Get_CanvasGroup: {fileID: 666241793}
 --- !u!4 &137050986
 Transform:
   m_ObjectHideFlags: 0
@@ -434,6 +436,7 @@ GameObject:
   - component: {fileID: 666241792}
   - component: {fileID: 666241791}
   - component: {fileID: 666241790}
+  - component: {fileID: 666241793}
   m_Layer: 5
   m_Name: Direct_Get_Button
   m_TagString: Untagged
@@ -543,6 +546,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666241788}
   m_CullTransparentMesh: 1
+--- !u!225 &666241793
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666241788}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1102,7 @@ GameObject:
   - component: {fileID: 1064691093}
   - component: {fileID: 1064691092}
   - component: {fileID: 1064691095}
+  - component: {fileID: 1064691096}
   m_Layer: 5
   m_Name: Start_Tip_Text
   m_TagString: Untagged
@@ -1245,6 +1261,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &1064691096
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064691090}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!224 &1332465831 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8078143986463151787, guid: cdccb7c15b4a43e41a239e2a85139139,
