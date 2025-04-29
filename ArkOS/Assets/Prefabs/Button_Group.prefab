@@ -50,13 +50,14 @@ GameObject:
   - component: {fileID: 616956749027528899}
   - component: {fileID: 4151882676615407317}
   - component: {fileID: 1030479715575996437}
+  - component: {fileID: 3517238278553656307}
   m_Layer: 5
   m_Name: Direct_Get_Sel_Right_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2831814231683272626
 RectTransform:
   m_ObjectHideFlags: 0
@@ -128,6 +129,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 60
   rotationDirection: 1
+--- !u!225 &3517238278553656307
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521178077064485701}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4753595710972279229
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7108477268371357378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -409,13 +422,14 @@ GameObject:
   - component: {fileID: 6708608006370833683}
   - component: {fileID: 3840161180768370891}
   - component: {fileID: 6944778801388176692}
+  - component: {fileID: 7755288541162562256}
   m_Layer: 5
   m_Name: Direct_Get_Sel_Left_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6807690053114086872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -487,3 +501,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 60
   rotationDirection: -1
+--- !u!225 &7755288541162562256
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421077746182846287}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

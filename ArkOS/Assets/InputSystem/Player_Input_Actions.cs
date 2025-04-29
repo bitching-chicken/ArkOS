@@ -44,6 +44,24 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwipeBack"",
+                    ""type"": ""Value"",
+                    ""id"": ""6a2aacda-2493-4574-b4fc-6137dcad7718"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""56641b6d-7ffd-4f0b-b9e7-57151412129d"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -64,7 +82,18 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""First_Touch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b03f631a-8a18-4a57-8f8e-0a3771f3a79e"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
                     ""action"": ""First_Touch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -88,6 +117,94 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""02141199-c672-4c7d-9505-b94f455a4e31"",
+                    ""path"": ""<Touchscreen>/primaryTouch/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""SwipeBack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7fb751fd-e70a-494b-bdc4-3181bad83072"",
+                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""SwipeBack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""c1c29389-ed8c-49ff-a2dd-d6eacc344feb"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f0bf0882-9105-4fd8-b02e-eeed4b4b44c7"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""388d2594-8be0-43a5-9c46-37a56f8f2417"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""7083e78b-9068-4c5b-9dda-95c411e80e76"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a240131d-b953-4b07-ba51-39c85befa06f"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""268546a5-90a6-46ad-8c98-99f08ff3b453"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -116,6 +233,17 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Touch"",
+            ""bindingGroup"": ""Touch"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Touchscreen>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
@@ -123,6 +251,8 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
         m_Main_UI = asset.FindActionMap("Main_UI", throwIfNotFound: true);
         m_Main_UI_First_Touch = m_Main_UI.FindAction("First_Touch", throwIfNotFound: true);
         m_Main_UI_Back = m_Main_UI.FindAction("Back", throwIfNotFound: true);
+        m_Main_UI_SwipeBack = m_Main_UI.FindAction("SwipeBack", throwIfNotFound: true);
+        m_Main_UI_Move = m_Main_UI.FindAction("Move", throwIfNotFound: true);
     }
 
     ~@Player_Input_Actions()
@@ -191,12 +321,16 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
     private List<IMain_UIActions> m_Main_UIActionsCallbackInterfaces = new List<IMain_UIActions>();
     private readonly InputAction m_Main_UI_First_Touch;
     private readonly InputAction m_Main_UI_Back;
+    private readonly InputAction m_Main_UI_SwipeBack;
+    private readonly InputAction m_Main_UI_Move;
     public struct Main_UIActions
     {
         private @Player_Input_Actions m_Wrapper;
         public Main_UIActions(@Player_Input_Actions wrapper) { m_Wrapper = wrapper; }
         public InputAction @First_Touch => m_Wrapper.m_Main_UI_First_Touch;
         public InputAction @Back => m_Wrapper.m_Main_UI_Back;
+        public InputAction @SwipeBack => m_Wrapper.m_Main_UI_SwipeBack;
+        public InputAction @Move => m_Wrapper.m_Main_UI_Move;
         public InputActionMap Get() { return m_Wrapper.m_Main_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -212,6 +346,12 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
             @Back.started += instance.OnBack;
             @Back.performed += instance.OnBack;
             @Back.canceled += instance.OnBack;
+            @SwipeBack.started += instance.OnSwipeBack;
+            @SwipeBack.performed += instance.OnSwipeBack;
+            @SwipeBack.canceled += instance.OnSwipeBack;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
         }
 
         private void UnregisterCallbacks(IMain_UIActions instance)
@@ -222,6 +362,12 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
             @Back.started -= instance.OnBack;
             @Back.performed -= instance.OnBack;
             @Back.canceled -= instance.OnBack;
+            @SwipeBack.started -= instance.OnSwipeBack;
+            @SwipeBack.performed -= instance.OnSwipeBack;
+            @SwipeBack.canceled -= instance.OnSwipeBack;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
         }
 
         public void RemoveCallbacks(IMain_UIActions instance)
@@ -257,9 +403,20 @@ public partial class @Player_Input_Actions: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
+    private int m_TouchSchemeIndex = -1;
+    public InputControlScheme TouchScheme
+    {
+        get
+        {
+            if (m_TouchSchemeIndex == -1) m_TouchSchemeIndex = asset.FindControlSchemeIndex("Touch");
+            return asset.controlSchemes[m_TouchSchemeIndex];
+        }
+    }
     public interface IMain_UIActions
     {
         void OnFirst_Touch(InputAction.CallbackContext context);
         void OnBack(InputAction.CallbackContext context);
+        void OnSwipeBack(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
     }
 }
