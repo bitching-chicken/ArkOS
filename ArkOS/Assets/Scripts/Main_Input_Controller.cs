@@ -92,7 +92,7 @@ public class Main_Input_Controller : MonoBehaviour
     {
         // create input system
         playerInput = GetComponent<PlayerInput>();
-       Main_Input = new Player_Input_Actions();
+        Main_Input = new Player_Input_Actions();
 
         // enable default map
         Main_Input.Main_UI.Enable();
